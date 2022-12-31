@@ -16,17 +16,24 @@
 }
 
 .global-page {
-  max-height: 90vh;
+  max-height: 95vh;
   background-image: url(../assets/nochevieja_1.jpg);
-  background-position: center;
+  background-position: center center; ;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: inherit;
+  background-origin: content-box;
   .center-content {
-    position: relative;
     max-height: 95vh;
     height: 90vh;
     max-width: 100%;
+    .flakes {
+      position: relative;
+      max-height: 80vh;
+      max-width: 100%;
+      width: 97%;
+      height: 79vh;
+    }
     .menu-sections {
       overflow: auto;
       font-family: 'Source Serif Pro', serif;

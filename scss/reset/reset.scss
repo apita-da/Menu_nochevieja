@@ -70,7 +70,8 @@ body {
   color: var(--blanco);
   hyphens: auto;
   font-smooth: always;
-  height: 90vh;
+  height: 100%;
+  overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

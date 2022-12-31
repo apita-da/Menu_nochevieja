@@ -1,6 +1,6 @@
 
 function snow() {
-    let contentElement = document.querySelector('.center-content');
+    let contentElement = document.querySelector('.flakes');
     // 1. Defina una plantilla de copo de nieve
     var flake = document.createElement('div');
     // Personaje de copo de nieve ❄❉❅❆✻✼❇❈❊✥✺
@@ -8,9 +8,10 @@ function snow() {
     flake.style.cssText = 'position:absolute;color:#f8f8ff;';
 
     // Obtiene la altura de la página, que es equivalente a la posición del eje Y cuando caen los copos de nieve
-    var documentHieght = contentElement.offsetHeight;
+    var documentHeight = contentElement.offsetHeight;
     // Obtenga el ancho de la página, use este número para calcular, el valor de la izquierda cuando comienza el copo de nieve
     var documentWidth = contentElement.offsetWidth;
+    console.log(documentWidth, documentHeight);
 
     // Define la cantidad de milisegundos para generar un copo de nieve
     var millisec = 100;
@@ -32,7 +33,7 @@ function snow() {
         var startOpacity = 0.7 + 0.3 * Math.random();
 
         // Genera aleatoriamente la transparencia al final de la caída de los copos de nieve
-        var endOpacity = 0.2 + 0.2 * Math.random();
+        var endOpacity = 0;
 
         // Clonar una plantilla de copo de nieve
         var cloneFlake = flake.cloneNode(true);
@@ -55,7 +56,7 @@ function snow() {
             // Modifica el estilo por segunda vez
             cloneFlake.style.cssText += `
                         left: ${endLeft}px;
-                        top:${documentHieght}px;
+                        top:${documentHeight}px;
                         opacity:${endOpacity};
                     `;
 
