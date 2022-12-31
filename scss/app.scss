@@ -48,46 +48,9 @@
         .section-list {
           margin-bottom: 8px;
           list-style:disc;
+          margin-left:15px;
 
         }
-        &.appetizers {
-          .section-list {
-            .section-sub-list {
-              margin-left: 2.5em ;
-            }
-
-            // &::before {
-            //   content: '✓';
-            //   margin-right: 4px;
-            // }
-            &.name {
-              &::before {
-                content: none;
-              }
-              font-size: 10px;
-            }
-          }
-        }
-        &.main-courses, &.deserts {
-          .section-list {
-            margin-left: 15px;
-          }
-        }
-        &.drinks {
-          .section-list {
-            &.name {
-              font-weight: 400;
-              font-size: 14px;
-            }
-            &.list {
-              margin-left: 15px;
-            }
-          }
-          .litle-note {
-            margin: 2em 0;
-          }
-        }
-
       }
     }
   }

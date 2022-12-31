@@ -276,35 +276,7 @@ body {
 .global-page .center-content .menu-sections .section .section-list {
   margin-bottom: 8px;
   list-style: disc;
-}
-
-.global-page .center-content .menu-sections .section.appetizers .section-list .section-sub-list {
-  margin-left: 2.5em;
-}
-
-.global-page .center-content .menu-sections .section.appetizers .section-list.name {
-  font-size: 10px;
-}
-
-.global-page .center-content .menu-sections .section.appetizers .section-list.name::before {
-  content: none;
-}
-
-.global-page .center-content .menu-sections .section.main-courses .section-list, .global-page .center-content .menu-sections .section.deserts .section-list {
   margin-left: 15px;
-}
-
-.global-page .center-content .menu-sections .section.drinks .section-list.name {
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.global-page .center-content .menu-sections .section.drinks .section-list.list {
-  margin-left: 15px;
-}
-
-.global-page .center-content .menu-sections .section.drinks .litle-note {
-  margin: 2em 0;
 }
 
 .merry-xmas .final-text {
